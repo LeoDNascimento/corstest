@@ -6,9 +6,11 @@ async function handleAddRepository(): Promise<void> {
     username: 'rafael',
     password: 'testing123',
   });
+  console.log(response);
 }
 
 const App: React.FC = () => (
+  // eslint-disable-next-line react/button-has-type
   <button onClick={handleAddRepository}>Start</button>
 );
 
