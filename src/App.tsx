@@ -1,7 +1,7 @@
 import React from 'react';
 import api from './services/api';
 
-async function handleAddRepository(): Promise<void> {
+async function handleAddRepository() {
   const response = await api.post('/user/login', {
     username: 'rafael',
     password: 'testing123',
@@ -9,7 +9,7 @@ async function handleAddRepository(): Promise<void> {
   console.log(response);
 }
 
-const App: React.FC = () => (
+const App = () => (
   // eslint-disable-next-line react/button-has-type
   <button onClick={handleAddRepository}>Start</button>
 );
